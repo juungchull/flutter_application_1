@@ -246,7 +246,7 @@ class _MyAppState extends State<MyApp> {
       ),
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.9),
+          color: Colors.grey.withOpacity(0.9),
           borderRadius: BorderRadius.circular(50),
         ),
         child: Center(
@@ -325,8 +325,8 @@ class _MyAppState extends State<MyApp> {
                   style: TextStyle(
                       fontSize: 18,
                       color: (index == _currentDateTime!.month - 1)
-                          ? Colors.yellow
-                          : Colors.white),
+                          ? Colors.red
+                          : Colors.black),
                 ),
               ),
             ),
@@ -376,7 +376,7 @@ class _MyAppState extends State<MyApp> {
                     style: TextStyle(
                         fontSize: 18,
                         color: (thisYear == _currentDateTime!.year)
-                            ? Colors.yellow
+                            ? Colors.black
                             : Colors.white),
                   ),
                 );
